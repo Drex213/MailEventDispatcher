@@ -17,16 +17,16 @@ export interface LambdaResponse {
 export async function handler(event: LambdaRequest): Promise<LambdaResponse> {
 
     // Settings for Testing
-    let settings: MailgunSettings = {
-        currentTimeTimestamp: 1529006856,
-        webhookSigningKey: "test_key"
-    };
+    // let settings: MailgunSettings = {
+    //     currentTimeTimestamp: 1529006856,
+    //     webhookSigningKey: "test_key"
+    // };
 
     // Settings for Deployment
-    // let settings: MailgunSettings = {
-    //     currentTimeTimestamp: Date.now() / 1000,
-    //     webhookSigningKey: process.env.mailgunWebhookSigningKey
-    // };
+    let settings: MailgunSettings = {
+        currentTimeTimestamp: Date.now() / 1000,
+        webhookSigningKey: process.env.mailgunWebhookSigningKey
+    };
 
     let payload = JSON.parse(event.body) as ExpectedPayload;
 
