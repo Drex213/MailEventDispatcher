@@ -1,0 +1,16 @@
+{
+  "name": "receevetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^15.12.1",
+    "aws-sdk": "^2.922.0"
+  }
+}
